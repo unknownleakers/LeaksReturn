@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gaurvi's Leaks</title>
+  <title>Gaurvi - Leaks Return</title>
   <link rel="stylesheet" href="/css/style.css" />
 </head>
-<body>
+<body class="gallery-page">
   <header>
-    <h1>Gaurvi's Leaks</h1>
-    <a href="/" class="back-button">← Back to Home</a>
+    <a href="/" class="back">← Back</a>
+    <h1>Gaurvi</h1>
   </header>
-  <main class="gallery">
-    <div class="photo-card">
-      <img src="images/person1/photo1.jpg" alt="Photo 1" />
-      <div class="actions">
-        <a href="images/person1/photo1.jpg" download>Download</a>
-        <button onclick="shareImage('images/person1/photo1.jpg')">Share</button>
-      </div>
-    </div>
-    <div class="photo-card">
-      <img src="images/person1/photo2.jpg" alt="Photo 2" />
-      <div class="actions">
-        <a href="images/person1/photo2.jpg" download>Download</a>
-        <button onclick="shareImage('images/person1/photo2.jpg')">Share</button>
-      </div>
-    </div>
-    <!-- More photos -->
+
+  <main class="gallery-grid">
+    <img src="images/person1/photo1.jpg" alt="Photo 1" onclick="openLightbox(this)">
+    <img src="images/person1/photo2.jpg" alt="Photo 2" onclick="openLightbox(this)">
+    <img src="images/person1/photo3.jpg" alt="Photo 3" onclick="openLightbox(this)">
+    <!-- Add more -->
   </main>
 
-  <script src="js/script.js"></script>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview" />
+    <div class="lightbox-actions">
+      <a id="download-btn" href="" download>Download</a>
+      <button id="share-btn">Share</button>
+    </div>
+  </div>
+
+  <script src="js/lightbox.js"></script>
 </body>
 </html>
