@@ -1,0 +1,108 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f9f9f9;
+  color: #111;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.back-button {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #007aff;
+}
+
+.people-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.people-list button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.people-list button:hover {
+  background-color: #005bb5;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.photo-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+
+.actions a,
+.actions button {
+  background: none;
+  border: none;
+  color: #007aff;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.actions button:hover,
+.actions a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .people-list,
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-card {
+    max-width: 90%;
+  }
+}
