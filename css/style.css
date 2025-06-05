@@ -49,6 +49,7 @@ body {
 
 .card span {
   z-index: 2;
+  color: black;
   position: relative;
 }
 
