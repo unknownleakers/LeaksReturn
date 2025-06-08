@@ -53,6 +53,53 @@ body {
   position: relative;
 }
 
+.contact-table-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  color: #111;
+  text-align: center;
+}
+
+.contact-table-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-table thead {
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-table th {
+  font-weight: 600;
+  color: #444;
+}
+
+.contact-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+
 .card::before {
   content: '';
   position: absolute;
